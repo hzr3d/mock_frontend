@@ -1,0 +1,15 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  policy:
+    uses: arres_devops/.github/workflows/policy-ci.yml@main
+    with:
+      project_type: react_app
+      docker_image_name: mock_frontend
+      artifact_name: mock_frontend
+      run_integration: true

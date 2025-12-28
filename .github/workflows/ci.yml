@@ -8,6 +8,8 @@ on:
 jobs:
   policy:
     uses: hzr3d/arres_devops/.github/workflows/policy-ci.yml@main
+    permissions:
+      id-token: write
     with:
       project_type: react_app
       docker_image_name: mock_frontend

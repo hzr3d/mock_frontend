@@ -7,7 +7,7 @@ on:
 
 jobs:
   policy:
-    uses: arres_devops/.github/workflows/policy-ci.yml@main
+    uses: hzr3d/arres_devops/.github/workflows/policy-ci.yml@main
     with:
       project_type: react_app
       docker_image_name: mock_frontend
